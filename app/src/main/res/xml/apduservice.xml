@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:requireDeviceUnlock="false">
+
+    <!-- Define the Application Identifier (AID) Group -->
+    <aid-group android:category="other" android:label="@string/service_name">
+        <!-- AID(s) that service will respond to -->
+        <aid-filter android:name="F001020304" />
+    </aid-group>
+
+    <!-- Service Description -->
+    <service android:description="@string/service_description" />
+</host-apdu-service>
